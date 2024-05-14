@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html data-theme="nord">
+<html lang="en" data-theme="nord">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashley Sweeney</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="/public/styles.min.css" rel="stylesheet">
 </head>
 <body>
@@ -17,20 +15,20 @@
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a href="/">Home</a></li>
+                  <li><a href="#home" class="anchor-link">Home</a></li>
                   <li><a href="#about" class="anchor-link">About</a></li>
-                  <li><a>Projects</a></li>
-                  <li><a>Contact</a></li>
+                  <li><a href="#projects" class="anchor-link">Projects</a></li>
+                  <li><a href="#contact" class="anchor-link">Contact</a></li>
                 </ul>
               </div>
-              <a class="text-xl uppercase m-1 font-bold">Ash<span class="text-teal-500">.dev</span></a>
+              <a class="text-xl uppercase m-1 font-bold">Ash<span class="text-primary">.dev</span></a>
             </div>
             <div class="navbar-end hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a href="/">Home</a></li>
+                <li><a href="#home" class="anchor-link">Home</a></li>
                 <li><a href="#about" class="anchor-link">About</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="#projects" class="anchor-link">Projects</a></li>
+                <li><a href="#contact" class="anchor-link">Contact</a></li>
               </ul>
               <div class="ml-3">
                 <label class="swap swap-rotate">
@@ -54,9 +52,9 @@
     <main>
         <div id="home" class="hero min-h-screen">
             <div class="hero-content flex-col lg:flex-row-reverse text-center text-base-content">
-              <div class="max-w-2xl">
-                <div class="flex max-w-2xl">
-                  <div class="flex-initial max-w-md">
+              <div class="max-w-5xl">
+                <div class="flex flex-row flex-wrap-reverse justify-center">
+                  <div class="flex-auto max-w-md">
                     <h1 class="mb-5 text-5xl font-bold antialiased text-left">
                       Full Stack Web Developer <span class="text-4xl">💻</span>
                     </h1>
@@ -64,67 +62,68 @@
                       I'm a student software developer specialising in Web Development and Design, located in London, UK 📍 <br> This is a website I built to showcase some of my work and projects as I progress through my degree in Computer Science and Software Development.
                     </p>
                   </div>
-                    <img src="/public/img/me.JPG" class="flex-none hidden lg:flex max-w-56 max-h-56 mr-8 mask mask-circle shadow-2xl border-8 rounded-full border-base-content"> 
-
+                  <div class="flex-none mb-8">
+                    <img src="/public/img/me.webp" class="max-w-56 max-h-56 mask mask-circle shadow-2xl border-8 rounded-full border-base-content" alt="Image of Ash"> 
+                  </div>
                 </div>
-                <div class="flex mb-8">
+                <div class="flex justify-center md:justify-start mb-8">
                   <div class="flex-none">
                     <a href="https://github.com/xapher19">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="2.5rem" viewBox="0 0 1024 1024" class="fill-base-content">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="2.5rem" viewBox="0 0 1024 1024" class="fill-base-content hover:fill-primary">
                         <path d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)"/>
                       </svg>
                     </a>
                   </div>
                   <div class="flex-none ml-4">
                     <a href="https://www.linkedin.com/in/ashley-sweeney">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="2.5rem" viewBox="0 0 72 72" class="fill-base-content">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="2.5rem" viewBox="0 0 72 72" class="fill-base-content hover:fill-primary">
                           <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"/>
                           <path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" class="fill-base-100"/>
                       </svg>
                     </a>
                   </div>
                 </div>
-                <div class="flex">
-                    <div class="flex-none max-w-32 border-r-2 border-base-content align-middle mr-10 pr-4 uppercase">
+                <div class="flex items-center justify-center">
+                    <div class="flex-none max-w-32 border-r-2 border-base-content align-middle mr-4 pr-4 uppercase">
                       Tech Stack
                     </div>
-                    <div class="flex-auto tooltip tooltip-left" data-tip="HTML">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1.5rem">
+                    <div class="flex-auto tooltip tooltip-top" data-tip="HTML">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1.5rem" class="block m-auto">
                         <path fill="#E34F26" d="M71,460 L30,0 481,0 440,460 255,512"/>
                         <path fill="#EF652A" d="M256,472 L405,431 440,37 256,37"/>
                         <path fill="#EBEBEB" d="M256,208 L181,208 176,150 256,150 256,94 255,94 114,94 115,109 129,265 256,265zM256,355 L255,355 192,338 188,293 158,293 132,293 139,382 255,414 256,414z"/>
                         <path fill="#FFF" d="M255,208 L255,265 325,265 318,338 255,355 255,414 371,382 372,372 385,223 387,208 371,208zM255,94 L255,129 255,150 255,150 392,150 392,150 392,150 393,138 396,109 397,94z"/>
                       </svg>
                     </div>
-                    <div class="flex-auto tooltip tooltip-left" data-tip="CSS">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 512 512">
+                    <div class="flex-auto tooltip tooltip-top" data-tip="CSS">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 512 512" class="block m-auto">
                         <path fill="#264de4" d="M72 460L30 0h451l-41 460-184 52"/>
                         <path fill="#2965f1" d="M256 37V472l149-41 35-394"/>
                         <path fill="#ebebeb" d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382"/>
                         <path fill="#ffffff" d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z"/>
                       </svg>
                     </div>
-                    <div class="flex-auto tooltip tooltip-left" data-tip="JavaScript">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 1052 1052">
+                    <div class="flex-auto tooltip tooltip-top" data-tip="JavaScript">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 1052 1052" class="block m-auto">
                         <path fill="#f0db4f" d="M0 0h1052v1052H0z"/>
                         <path d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z" fill="#323330"/>
                       </svg>
                     </div>
-                    <div class="flex-auto tooltip tooltip-left" data-tip="Node.JS">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 32 32" fill="#8cc84b">
+                    <div class="flex-auto tooltip tooltip-top" data-tip="Node.JS">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 32 32" fill="#8cc84b" class="block m-auto">
                         <path d="M14.656.427c.8-.453 1.82-.455 2.6 0L29.2 7.16c.747.42 1.247 1.253 1.24 2.114v13.5c.005.897-.544 1.748-1.332 2.16l-11.88 6.702a2.6 2.6 0 0 1-2.639-.073l-3.565-2.06c-.243-.145-.516-.26-.688-.495.152-.204.422-.23.642-.32.496-.158.95-.4 1.406-.656.115-.08.256-.05.366.022l3.04 1.758c.217.125.437-.04.623-.145l11.665-6.583c.144-.07.224-.222.212-.38V9.334c.016-.18-.087-.344-.25-.417L16.19 2.244a.41.41 0 0 0-.465-.001L3.892 8.93c-.16.073-.27.235-.25.415v13.37c-.014.158.07.307.215.375l3.162 1.785c.594.32 1.323.5 1.977.265a1.5 1.5 0 0 0 .971-1.409l.003-13.29c-.014-.197.172-.36.363-.34h1.52c.2-.005.357.207.33.405L12.18 23.88c.001 1.188-.487 2.48-1.586 3.063-1.354.7-3.028.553-4.366-.12l-3.4-1.88c-.8-.4-1.337-1.264-1.332-2.16v-13.5a2.46 2.46 0 0 1 1.282-2.141L14.656.427zM18.1 9.785c1.727-.1 3.576-.066 5.13.785 1.203.652 1.87 2.02 1.892 3.358-.034.18-.222.28-.394.267-.5-.001-1.002.007-1.504-.003-.213.008-.336-.188-.363-.376-.144-.64-.493-1.273-1.095-1.582-.924-.463-1.996-.44-3.004-.43-.736.04-1.527.103-2.15.535-.48.328-.624 1-.453 1.522.16.383.603.506.964.62 2.082.544 4.287.5 6.33 1.207.845.292 1.672.86 1.962 1.745.378 1.186.213 2.604-.63 3.556-.684.784-1.68 1.2-2.675 1.442-1.323.295-2.695.302-4.038.17-1.263-.144-2.577-.476-3.552-1.336-.834-.724-1.24-1.852-1.2-2.94.01-.184.193-.312.37-.297h1.5c.202-.014.35.16.36.35.093.6.322 1.25.854 1.6 1.026.662 2.313.616 3.487.635.973-.043 2.065-.056 2.86-.7.42-.367.543-.98.43-1.508-.123-.446-.6-.653-1-.8-2.055-.65-4.285-.414-6.32-1.15-.826-.292-1.625-.844-1.942-1.693-.443-1.2-.24-2.687.693-3.607.9-.915 2.22-1.268 3.47-1.394z"/>
                       </svg>
                     </div>
-                    <div class="flex-auto tooltip tooltip-left" data-tip="React">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="175.7 78 490.6 436.9">
+                    <div class="flex-auto tooltip tooltip-top" data-tip="React">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="175.7 78 490.6 436.9" class="block m-auto">
                         <g fill="#61dafb">
                           <path d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z"/>
                           <circle cx="420.9" cy="296.5" r="45.7"/>
                         </g>
                       </svg>
                     </div>
-                    <div class="flex-auto tooltip tooltip-left" data-tip="Tailwind CSS">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" height="1.5rem">
+                    <div class="flex-auto tooltip tooltip-top" data-tip="Tailwind CSS">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" height="1.5rem" class="block m-auto">
                         <g clip-path="url(#prefix__clip0)">
                           <path fill="#38bdf8" fill-rule="evenodd" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" clip-rule="evenodd"/>
                         </g>
@@ -133,8 +132,8 @@
                         </defs>
                       </svg>
                     </div>
-                    <div class="flex-auto tooltip tooltip-left" data-tip="MySQL">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 25.6 25.6">
+                    <div class="flex-auto tooltip tooltip-top" data-tip="MySQL">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 25.6 25.6" class="block m-auto">
                         <path d="M179.076 94.886c-3.568-.1-6.336.268-8.656 1.25-.668.27-1.74.27-1.828 1.116.357.355.4.936.713 1.428.535.893 1.473 2.096 2.32 2.72l2.855 2.053c1.74 1.07 3.703 1.695 5.398 2.766.982.625 1.963 1.428 2.945 2.098.5.357.803.938 1.428 1.16v-.135c-.312-.4-.402-.98-.713-1.428l-1.34-1.293c-1.293-1.74-2.9-3.258-4.64-4.506-1.428-.982-4.55-2.32-5.13-3.97l-.088-.1c.98-.1 2.14-.447 3.078-.715 1.518-.4 2.9-.312 4.46-.713l2.143-.625v-.4c-.803-.803-1.383-1.874-2.23-2.632-2.275-1.963-4.775-3.882-7.363-5.488-1.383-.892-3.168-1.473-4.64-2.23-.537-.268-1.428-.402-1.74-.848-.805-.98-1.25-2.275-1.83-3.436l-3.658-7.763c-.803-1.74-1.295-3.48-2.275-5.086-4.596-7.585-9.594-12.18-17.268-16.687-1.65-.937-3.613-1.34-5.7-1.83l-3.346-.18c-.715-.312-1.428-1.16-2.053-1.562-2.543-1.606-9.102-5.086-10.977-.5-1.205 2.9 1.785 5.755 2.8 7.228.76 1.026 1.74 2.186 2.277 3.346.3.758.4 1.562.713 2.365.713 1.963 1.383 4.15 2.32 5.98.5.937 1.025 1.92 1.65 2.767.357.5.982.714 1.115 1.517-.625.893-.668 2.23-1.025 3.347-1.607 5.042-.982 11.288 1.293 15 .715 1.115 2.4 3.57 4.686 2.632 2.008-.803 1.56-3.346 2.14-5.577.135-.535.045-.892.312-1.25v.1l1.83 3.703c1.383 2.186 3.793 4.462 5.8 5.98 1.07.803 1.918 2.187 3.256 2.677v-.135h-.088c-.268-.4-.67-.58-1.027-.892-.803-.803-1.695-1.785-2.32-2.677-1.873-2.498-3.523-5.265-4.996-8.12-.715-1.383-1.34-2.9-1.918-4.283-.27-.536-.27-1.34-.715-1.606-.67.98-1.65 1.83-2.143 3.034-.848 1.918-.936 4.283-1.248 6.737-.18.045-.1 0-.18.1-1.426-.356-1.918-1.83-2.453-3.078-1.338-3.168-1.562-8.254-.402-11.913.312-.937 1.652-3.882 1.117-4.774-.27-.848-1.16-1.338-1.652-2.008-.58-.848-1.203-1.918-1.605-2.855-1.07-2.5-1.605-5.265-2.766-7.764-.537-1.16-1.473-2.365-2.232-3.435-.848-1.205-1.783-2.053-2.453-3.48-.223-.5-.535-1.294-.178-1.83.088-.357.268-.5.623-.58.58-.5 2.232.134 2.812.4 1.65.67 3.033 1.294 4.416 2.23.625.446 1.295 1.294 2.098 1.518h.938c1.428.312 3.033.1 4.37.5 2.365.76 4.506 1.874 6.426 3.08 5.844 3.703 10.664 8.968 13.92 15.26.535 1.026.758 1.963 1.25 3.034.938 2.187 2.098 4.417 3.033 6.56.938 2.097 1.83 4.24 3.168 5.98.67.937 3.346 1.427 4.55 1.918.893.4 2.275.76 3.08 1.25 1.516.937 3.033 2.008 4.46 3.034.713.534 2.945 1.65 3.078 2.54zm-45.5-38.772a7.09 7.09 0 0 0-1.828.223v.1h.088c.357.714.982 1.205 1.428 1.83l1.027 2.142.088-.1c.625-.446.938-1.16.938-2.23-.268-.312-.312-.625-.535-.937-.268-.446-.848-.67-1.206-1.026z" transform="matrix(.390229 0 0 .38781 -46.300037 -16.856717)" fill-rule="evenodd" fill="#00678c"/>
                       </svg>
                     </div>
@@ -144,12 +143,136 @@
         </div>
         <div id="about" class="hero min-h-screen bg-base-200">
           <div class="hero-content text-left">
-            <div class="max-w-2xl flex">
-                <img src="/public/img/hero-1.jpg" class="flex-none hidden lg:flex max-w-56 max-h-56 mr-8 mask mask-circle shadow-2xl border-8 rounded-full border-base-content" />
-              <div class="flex-auto max-w-96">
+            <div class="max-w-5xl flex flex-row flex-wrap justify-center">
+              <div class="flex-none mb-8">
+                <img src="/public/img/about.webp" class="max-w-56 max-h-56 mask mask-circle shadow-2xl border-8 rounded-full border-base-content" alt="Image of Ash"> 
+              </div>
+              <div class="flex-auto max-w-md md:ml-8">
                 <h1 class="text-5xl font-bold">About Me</h1>
-                <p class="py-2">I'm Ashley, or Ash, either is fine! I'm a student at the Open University here in the UK, studying Computer Science and Software Development. Some of the languages I study are Python, Java, JavaScript, and Swift.</p>
-                <p class="py-2">I've always had a fascination with web development and design, right from 6 years old and discovering Microsoft FrontPage! Up until recently, it was always a hobby I would do in my spare time. But after a lengthy career outside of tech, I knew I wanted more out of my day job, something that was fulfilling and something I'm passionate about. So I decided to take the plunge and head back to university and study Computer Science and Software Development.</p>
+                <p class="py-2 font-medium">I'm Ashley, or Ash, either is fine! I'm a student at the Open University here in the UK, studying Computer Science and Software Development. 🎓 <br>Some of the languages I study are Python, Java, JavaScript, and Swift.</p>
+                <p class="py-2 font-medium">I've always had a fascination with web development and design, right from 6 years old and discovering Microsoft FrontPage! 😅 <br>Up until recently, it was always a hobby I would do in my spare time. But after a lengthy career outside of tech, I knew I wanted more out of my day job, something that was fulfilling and something I'm passionate about. 💪🏽 <br>That's when I decided to take the plunge and head back to university and study Computer Science and Software Development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="projects" class="hero min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse text-left text-base-content">
+            <div class="max-w-3xl">
+              <h1 class="text-5xl font-bold mb-4">My Projects</h1>
+              <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+                <div class="card card-compact max-w-64 bg-neutral text-neutral-content shadow-xl cursor-pointer hover:scale-110 transition ease-in-out" onclick="portfolio_modal.showModal()">
+                  <figure><img src="/public/img/portfolio-thumb.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Portfolio</h2>
+                    <p>My portfolio project.</p>
+                  </div>
+                </div>
+                <dialog id="portfolio_modal" class="modal">
+                  <div class="modal-box max-w-5xl">
+                    <form method="dialog">
+                      <button class="btn btn-xs btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                  </div>
+                </dialog>
+                <div class="card card-compact max-w-64 bg-neutral text-neutral-content shadow-xl cursor-pointer hover:scale-110 transition ease-in-out" onclick="project_2_modal.showModal()">
+                  <figure><img src="/public/img/portfolio-thumb.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Project 2</h2>
+                    <p>Project 2 description</p>
+                  </div>
+                </div>
+                <dialog id="project_2_modal" class="modal">
+                  <div class="modal-box max-w-5xl">
+                    <form method="dialog">
+                      <button class="btn btn-xs btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                  </div>
+                </dialog>
+                <div class="card card-compact max-w-64 bg-neutral text-neutral-content shadow-xl cursor-pointer hover:scale-110 transition ease-in-out" onclick="project_3_modal.showModal()">
+                  <figure><img src="/public/img/portfolio-thumb.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Project 3</h2>
+                    <p>Project 3 description</p>
+                  </div>
+                </div>
+                <dialog id="project_3_modal" class="modal">
+                  <div class="modal-box max-w-5xl">
+                    <form method="dialog">
+                      <button class="btn btn-xs btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                  </div>
+                </dialog>
+                <div class="card card-compact max-w-64 bg-neutral text-neutral-content shadow-xl cursor-pointer hover:scale-110 transition ease-in-out" onclick="project_4_modal.showModal()">
+                  <figure><img src="/public/img/portfolio-thumb.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Project 4</h2>
+                    <p>Project 4 description</p>
+                  </div>
+                </div>
+                <dialog id="project_4_modal" class="modal">
+                  <div class="modal-box max-w-5xl">
+                    <form method="dialog">
+                      <button class="btn btn-xs btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="hero min-h-screen bg-base-200">
+          <div class="hero-content flex-col lg:flex-row-reverse text-center text-base-content">
+            <div class="max-w-5xl">
+              <div class="flex flex-row flex-wrap-reverse justify-center">
+                <div class="flex-auto max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold antialiased text-left">
+                    Contact Me
+                  </h1>
+                  <p class="mb-5 font-medium text-left">
+                    I will consider all projects presented to me, especially those that excite or inspire me! 🤩 If you have a new and fresh idea, or something old that you'd like to bring into the now, I'll create a plan bespoke to you and your needs. 📝
+                  </p>
+                  <p class="mb-5 font-medium text-left">
+                    I'd love to hear from you if you'd like to work with me. Feel free to reach out on LinkedIn, Github, or by email.
+                  </p>
+                  <div class="flex justify-center md:justify-start mb-8">
+                    <div class="flex-none">
+                      <a href="https://github.com/xapher19">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="2.5rem" viewBox="0 0 1024 1024" class="fill-base-content hover:fill-primary">
+                          <path d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="flex-none ml-4">
+                      <a href="https://www.linkedin.com/in/ashley-sweeney">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="2.5rem" viewBox="0 0 72 72" class="fill-base-content hover:fill-primary">
+                            <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"/>
+                            <path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" class="fill-base-100"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="flex-none ml-4">
+                      <a href="mailto:business@ashleysweeney.dev">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="2.5rem" viewBox="0 0 256 256" class="fill-base-content hover:fill-primary">
+                          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                            <path d="M 75.546 78.738 H 14.455 C 6.484 78.738 0 72.254 0 64.283 V 25.716 c 0 -7.97 6.485 -14.455 14.455 -14.455 h 61.091 c 7.97 0 14.454 6.485 14.454 14.455 v 38.567 C 90 72.254 83.516 78.738 75.546 78.738 z M 14.455 15.488 c -5.64 0 -10.228 4.588 -10.228 10.228 v 38.567 c 0 5.64 4.588 10.229 10.228 10.229 h 61.091 c 5.64 0 10.228 -4.589 10.228 -10.229 V 25.716 c 0 -5.64 -4.588 -10.228 -10.228 -10.228 H 14.455 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 11.044 25.917 C 21.848 36.445 32.652 46.972 43.456 57.5 c 2.014 1.962 5.105 -1.122 3.088 -3.088 C 35.74 43.885 24.936 33.357 14.132 22.83 C 12.118 20.867 9.027 23.952 11.044 25.917 L 11.044 25.917 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 46.544 57.5 c 10.804 -10.527 21.608 -21.055 32.412 -31.582 c 2.016 -1.965 -1.073 -5.051 -3.088 -3.088 C 65.064 33.357 54.26 43.885 43.456 54.412 C 41.44 56.377 44.529 59.463 46.544 57.5 L 46.544 57.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 78.837 64.952 c -7.189 -6.818 -14.379 -13.635 -21.568 -20.453 c -2.039 -1.933 -5.132 1.149 -3.088 3.088 c 7.189 6.818 14.379 13.635 21.568 20.453 C 77.788 69.973 80.881 66.89 78.837 64.952 L 78.837 64.952 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 14.446 68.039 c 7.189 -6.818 14.379 -13.635 21.568 -20.453 c 2.043 -1.938 -1.048 -5.022 -3.088 -3.088 c -7.189 6.818 -14.379 13.635 -21.568 20.453 C 9.315 66.889 12.406 69.974 14.446 68.039 L 14.446 68.039 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -159,12 +282,6 @@
         <aside class="items-center grid-flow-col">
           <p>Copyright © Ashley Sweeney 2024 - All rights reserved</p>
         </aside> 
-        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
-          </a>
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
-        </nav>
       </footer>
       <script src="/public/script.js"></script>
 </body>
