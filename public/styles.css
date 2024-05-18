@@ -1,0 +1,74 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+
+
+.gradient-border-custom {
+    border-radius: 50%;
+    border-top: 3px dashed oklch(var(--a));
+    border-right: 3px dashed oklch(var(--a));
+    border-left: 3px dashed oklch(var(--bc));
+    border-bottom: 3px dashed oklch(var(--bc));
+    padding: 10px;
+    animation: spin 30s infinite linear;
+}
+.gradient-border-custom img {
+    animation: spin 30s infinite reverse linear;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.hidden-hero {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-hero {
+        transition: none;
+    }
+}
+
+.show-hero {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.techstack:nth-child(2) {
+    transition-delay: 200ms;
+}
+.techstack:nth-child(3) {
+    transition-delay: 300ms;
+    
+}
+.techstack:nth-child(4) {
+    transition-delay: 400ms;
+    
+}
+.techstack:nth-child(5) {
+    transition-delay: 500ms;
+    
+}
+.techstack:nth-child(6) {
+    transition-delay: 600ms;
+    
+}
+.techstack:nth-child(7) {
+    transition-delay: 700ms;
+    
+}
+.techstack:nth-child(8) {
+    transition-delay: 800ms;
+    
+}

@@ -131,3 +131,17 @@ dist
 /public/img
 
 .DS_Store
+
+certs/
+
+server.cert
+server.key
+
+localserver.js
+resize.js
+compress.js
+
+*.br 
+*.gz
+
+.gcloudignore

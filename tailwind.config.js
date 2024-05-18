@@ -8,7 +8,16 @@ module.exports = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["nord", "dim"],
+    themes: ["nord", 
+      {
+        dim: {
+          ...require("daisyui/src/theming/themes")["dim"],
+          primary: "#5e81ac",
+          accent: "#88c0d0",
+
+        },
+      },
+    ],
   },
 }
 
