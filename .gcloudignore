@@ -17,3 +17,10 @@
 node_modules/
 
 certs/
+
+server.cert
+server.key
+
+localserver.js
+resize.js
+compress.js

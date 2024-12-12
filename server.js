@@ -76,4 +76,4 @@ app.get('/', (req, res, next) => {
 });
 
 // Open port
-app.listen(8080, () => console.log('Example app is listening on port 8080.'));
+app.listen(8080, () => console.log('Portfolio app is listening on port 8080.'));
